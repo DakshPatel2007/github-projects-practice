@@ -24,11 +24,12 @@ class TaskPool:
         task4 = Task("Update Login UI", status="ToDo")
         task5 = Task("Update Documentation", status="ToDo")
         task6 = Task("Deploy to Production", status="ToDo")
+        taskX = Task("Task X", status="ToDo")
         
         task1.mark_completed()
         task2.mark_completed()
         task3.mark_completed()
-        self.tasks = [task1, task2, task3, task4, task5, task6]
+        self.tasks = [task1, task2, task3, task4, task5, task6, taskX]
     
     def add_task(self, task):
         self.tasks.append(task)
